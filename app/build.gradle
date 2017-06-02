@@ -9,7 +9,6 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
-//        manifestPlaceholders = [JPUSH_APPKEY_VALUE: "efbdb4e06b6aae72e614a52d"]
         manifestPlaceholders = [JPUSH_APPKEY_VALUE: "18a0a24afb6e3cc51eaae6e0"]
         vectorDrawables.useSupportLibrary = true
     }
