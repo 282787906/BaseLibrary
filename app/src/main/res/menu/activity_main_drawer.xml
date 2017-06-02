@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Dialog"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="dialog"/>
+        <item
+            android:id="@+id/nav_RefreshRecyclerView"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="RefreshRecyclerView"/>
+
+
+        <item
+            android:id="@+id/nav_RecyclerView"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="RecyclerView"/>
+        <item
+            android:id="@+id/nav_ApiStore"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="ApiStore"></item>
+
+        <item
+            android:id="@+id/nav_CardView"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="CardView"/>
+
+        <item
+            android:id="@+id/nav_Fresco"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Fresco"/>
+        <item
+            android:id="@+id/nav_Glide"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Glide"/>
+        <item
+            android:id="@+id/nav_RefreshListview"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="RefreshListview"/>
+        <item
+            android:id="@+id/nav_FrescoListview"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="FrescoListview"/>
+        <item
+            android:id="@+id/nav_Banner"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Banner"/>
+        <item
+            android:id="@+id/nav_JPush"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="JPush"/>
+        <item
+            android:id="@+id/nav_JChat"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="JChat"/>
+        <item
+            android:id="@+id/nav_ImageSelect"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="ImageSelect"/>
+        <item
+            android:id="@+id/nav_WebViewTemplate"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="WebViewTemplate"/>
+        <item
+            android:id="@+id/nav_NoHttp"
+            android:icon="@drawable/ic_menu_send"
+            android:title="NoHttp"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_DownloadManager"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="DownloadManager"/>
+            <item
+                android:id="@+id/nav_BottomNavigation"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="BottomNavigation"/> <item
+            android:id="@+id/nav_CoordinatorLayout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="CoordinatorLayout"/>
+            <item
+                android:id="@+id/nav_TabActivity"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="TabActivity"/>
+            <item
+                android:id="@+id/nav_Scan"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Scan"/>
+            <item
+                android:id="@+id/nav_IM"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="IM"/>
+            <item
+                android:id="@+id/nav_SlidingClose"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="SlidingClose"/>
+            <item
+                android:id="@+id/nav_Update"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Update"/>
+            <item
+                android:id="@+id/nav_camera"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Camera"/>
+            <item
+                android:id="@+id/nav_CallPhone"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="CallPhone"/>
+
+        </menu>
+    </item>
+
+</menu>

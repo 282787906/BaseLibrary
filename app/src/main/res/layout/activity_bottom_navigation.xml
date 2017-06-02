@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lee.base.app_framework.BottomNavigationActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/line"
+        android:layout_below="@+id/include"
+        android:layout_weight="1"
+        >
+
+    </RelativeLayout>
+
+
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#ccc"
+        ></View>
+
+    <com.lee.base.view.bott_nav.BottomNavigation
+        android:id="@+id/main_bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom_height"
+        android:layout_alignParentBottom="true">
+    </com.lee.base.view.bott_nav.BottomNavigation>
+</LinearLayout>

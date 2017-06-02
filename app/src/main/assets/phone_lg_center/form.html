@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" >
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<title></title>
+	<link rel="stylesheet" href="plugins/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/menu/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="plugins/menu/css/styles.css">
+	<link rel="stylesheet" href="plugins/user-login/main.css">
+	<link rel="stylesheet" href="plugins/icheck/skins/all.css">
+	<link rel="stylesheet" href="plugins/icheck/skins/minimal/blue.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div class="htmleaf-container">
+		<div class="screen">
+				<nav class="nav nav-none">
+					<ul >
+						<li class="nav-title"><a href="#">工作台</a></li>
+						<li><a href="#">临港特色服务</a></li>
+						<li><a href="#">财税服务</a></li>
+						<li><a href="#">消息管理</a></li>
+					</ul>
+				</nav>
+				<div class="second-nav">
+					<h4 class="text-center">临港特色服务</h4>
+					<ul>
+						<li><a href="#">高端制造也发展</a></li>
+						<li><a href="#">财政扶持</a></li>
+					</ul>
+					<button class="btn btn-default go-back-menu"  style="position: fixed; left: 40%; bottom: 100px;">
+						返回主菜单
+					</button>
+				</div>
+				<div class="nav-toggle">
+					<div class="icon"></div>
+				</div>
+			</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div id="navbar" class="navbar navbar-default">
+					<div class="navbar-container" id="navbar-container">
+						<div class="navbar-header pull-left">
+							<a href="http://shlgservice.com/lg/index.html" class="navbar-brand">
+								<img alt="" src="img/logo.png" width="160px">
+							</a>
+						</div>
+
+						<div class="pull-right user">
+							欢迎，test
+						</div>
+
+
+						<div class="mobile">
+							<div class="mobile-inner">
+								<div class="mobile-inner-header">
+									<div class="mobile-inner-header-icon mobile-inner-header-icon-out"></div>
+								</div>
+								<div class="mobile-inner-nav">
+									<a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;修改密码</a>
+									<a href="#" class="last-a"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp;&nbsp;退出登录</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+		</div>
+
+
+		<div class="row form-content">
+			<div class="col-xs-12 no-padding-left">
+				<form class="form-horizontal" id="editForm" action="/admin/feature/manufacturing/save" method="POST">
+					<input type="hidden" name="id" id="id" value="0">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class=" col-xs-12 control-label no-padding-left no-padding-right">公司名称</label>
+							<div class=" col-xs-12">
+								<input name="company" id="company" type="text" class="form-control" data-rule-required="true" data-msg-required="请输入公司名称" data-rule-maxlength="100" placeholder="请输入公司名称">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="col-xs-12 control-label no-padding-left no-padding-right">公司注册地址</label>
+							<div class="col-xs-12">
+								<input name="companyAddress" id="companyAddress" type="text" class="form-control" placeholder="请输入公司注册地址" data-rule-required="true" data-msg-required="请输入公司注册地址">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="col-xs-12 control-label no-padding-left no-padding-right">公司经营地址</label>
+							<div class="col-xs-12">
+								<input name="companyManageAddress" id="companyManageAddress" type="text" class="form-control" placeholder="请输入公司经营地址" data-rule-required="true" data-msg-required="请输入公司经营地址">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="col-xs-12 control-label no-padding-left no-padding-right">固定资产总额</label>
+							<div class="col-xs-12">
+								<input name="fixedAssets" id="fixedAssets" type="text" class="form-control" placeholder="请输入固定资产总额" data-rule-required="true" data-rule-ispositivereal="true" data-rule-max="99999999999.99" data-msg-required="请输入固定资产总额">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form-group">
+							<div class="col-xs-12">
+								<input type="radio" name="projectType" class="type" value="0" id="projectType0" checked><label for="projectType0"> &nbsp; 国家重点技术改造项目</label>
+								<br>
+								<input type="radio" name="projectType" class="type" value="1" id="projectType1" ><label for="projectType1"> &nbsp; 地方重点技术改造项目</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form-group">
+							<div class="dashed"></div>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="col-xs-12 control-label no-padding-left no-padding-right">联系人姓名</label>
+							<div class="col-xs-12">
+								<input name="contacts" id="contacts" type="text" class="form-control" placeholder="请输入联系人姓名" data-rule-required="true" data-rule-maxlength="18" data-rule-specialchar="true" data-msg-required="请输入联系人姓名">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-xs-12 control-label no-padding-left no-padding-right">联系人电话</label>
+							<div class="col-xs-12">
+								<input name="contactsNumber" id="contactsNumber" type="text" class="form-control" placeholder="请输入联系人电话" data-rule-required="true" data-rule-phone="true" data-msg-required="请输入联系人电话">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-xs-3 control-label no-padding-left no-padding-right">取件方式</label>
+							<div class="col-xs-9">
+								<input type="radio" name="pickupMode" class="fs" id="pickupMode0" value="0" checked="" ><label for="pickupMode0">上门收件 &nbsp;&nbsp;</label>
+								<input type="radio" name="pickupMode" class="fs" id="pickupMode1" value="1" ><label for="pickupMode1">自送</label>
+							</div>
+						</div>
+						<div class="form-group" id="smsj">
+							<label class="col-xs-12 control-label no-padding-left no-padding-right">取件地址</label>
+							<div class="col-xs-12">
+								<textarea name="pickupAddress" id="pickupAddress" cols="30" rows="4" class="address" placeholder="请输入取件地址"></textarea>
+							</div>
+						</div>
+						<div class="form-group" id="sjxx" style="display: none;">
+							<label class="col-xs-12 control-label no-padding-left no-padding-right">收件信息</label>
+							<div class="col-xs-12">
+								<p>上海市闵行区虹梅南路1755号 上海伊文科技有限公司</p>
+								<p>收件人： ******</p>
+								<p>联系电话：（86）21-12321313</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12">
+						<div class="form-group">
+							<div class="col-xs-12">
+								<a href="javascript:manufacturing.save();" class="btn btn-primary btn-lg btn-block"> 提交申请 </a>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+
+			<div class="col-xs-12">
+				<div class="cl-name col-xs-12">
+					<h4>需要提供的材料清单：</h4>
+					<p>
+						1. 项目资金申请表；
+					</p>
+					<p>
+						2. 国家重点技术改造项目计划。
+					</p>
+				</div>
+			</div>
+
+			<div class="col-sm-12 sglist">
+				<div class="col-sm-12 text-center">
+					<span class="title">已申请列表</span>
+				</div>
+				<div id="manufacturingTable_wrapper" class="col-xs-12 dataTables_wrapper form-inline no-footer"><div><table id="manufacturingTable" class="table table-bordered table-striped dataTable no-footer" role="grid" aria-describedby="manufacturingTable_info">
+					<thead>
+					<tr role="row"><th class="col-sm-3 sorting" tabindex="0" aria-controls="manufacturingTable" rowspan="1" colspan="1" aria-label="公司名称: activate to sort column ascending">公司名称</th><th class="col-sm-3 sorting" tabindex="0" aria-controls="manufacturingTable" rowspan="1" colspan="1" aria-label="申请项目: activate to sort column ascending">申请项目</th><th class="col-sm-3 sorting" tabindex="0" aria-controls="manufacturingTable" rowspan="1" colspan="1" aria-label="申请时间: activate to sort column ascending">申请时间</th><th class="col-sm-2 sorting" tabindex="0" aria-controls="manufacturingTable" rowspan="1" colspan="1" aria-label="状态: activate to sort column ascending">状态</th><th class="col-sm-1 text-center sorting_disabled" rowspan="1" colspan="1" aria-label="操作">操作</th></tr>
+					</thead>
+					<tbody>
+					<tr role="row" class="odd">
+						<td>伊文科技</td>
+						<td>国家重点技术改造项目</td>
+						<td>2016-07-29 13:31:45</td>
+						<td>通过</td>
+						<td class="no-padding">
+							<div class="text-center">
+								<a href="javascript:manufacturing.detail(4,'manufacturing');" class="detail" data-id="1">
+									<i class="glyphicon glyphicon-eye-open"></i>
+								</a>
+
+							</div>
+						</td>
+					</tr>
+					<tr role="row" class="even">
+						<td>伊文科技</td>
+						<td>国家重点技术改造项目</td>
+						<td>2016-07-28 19:43:18</td>
+						<td>通过</td>
+						<td class="no-padding">
+							<div class="text-center">
+
+								<a href="javascript:manufacturing.detail(2,'manufacturing');" class="detail" data-id="1">
+									<i class="glyphicon glyphicon-eye-open"></i>
+								</a>
+
+							</div>
+						</td>
+					</tr>
+					<tr role="row" class="odd">
+						<td>依文科技长春分公司</td>
+						<td>国家重点技术改造项目</td>
+						<td>2016-07-28 15:11:08</td>
+						<td>通过</td>
+						<td class="no-padding">
+							<div class="text-center">
+								<a href="javascript:manufacturing.detail(1,'manufacturing');" class="detail" data-id="1">
+									<i class="glyphicon glyphicon-eye-open"></i>
+								</a>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+					<div class="footter">
+						<div class="dataTables_paginate paging_simple_numbers pull-right" id="manufacturingTable_paginate">
+							<ul class="pagination">
+								<li class="paginate_button previous disabled" aria-controls="manufacturingTable" tabindex="0" id="manufacturingTable_previous">
+									<a href="#">«</a>
+								</li>
+								<li class="paginate_button active" aria-controls="manufacturingTable" tabindex="0">
+									<a href="#">1</a>
+								</li>
+								<li class="paginate_button next disabled" aria-controls="manufacturingTable" tabindex="0" id="manufacturingTable_next">
+									<a href="#">»</a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					</div>
+			</div>
+		</div>
+
+
+		<div id="footer" class="row">
+			<div class="foot text-center">
+				临港地区企业服务局 ©2015-2017 沪备16005330号-1号
+			</div>
+		</div>
+	</div>
+	<div class="menu-bg fade"></div>
+	<script src="plugins/menu/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="plugins/icheck/icheck.min.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+	$(function () {
+
+		$('input[type="radio"]').iCheck({
+			radioClass: 'iradio_minimal-blue',
+			increaseArea: '20%' // optional
+		});
+
+
+	});
+	</script>
+</body>
+</html>

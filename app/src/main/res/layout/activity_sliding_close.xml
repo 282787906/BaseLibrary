@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.lee.base.view.SwipeBackLayout
+    android:id="@+id/swipe_layout_two"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+
+<LinearLayout
+    android:id="@+id/activity_sliding_close"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    tools:context="com.lee.base.activity.SlidingCloseActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:textSize="30sp"
+    android:text="侧滑关闭"
+    android:background="#eee"
+    android:id="@+id/textView2"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/button13"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="text"/>
+</LinearLayout>
+
+
+</com.lee.base.view.SwipeBackLayout>

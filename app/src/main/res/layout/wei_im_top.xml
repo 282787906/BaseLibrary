@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3A4042">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/im_top_height"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/im_top_rl_back"
+
+            android:layout_width="@dimen/im_top_height"
+            android:layout_height="@dimen/im_top_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:clickable="true"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/im_back"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginRight="10dp"
+
+            android:layout_marginTop="10dp"
+            android:background="#363B40"></View>
+
+        <TextView
+            android:id="@+id/im_top_tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="正在输入..."
+            android:textColor="#DBD5CC"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/im_top_rl_userInfo"
+        android:layout_width="@dimen/im_top_height"
+        android:layout_height="@dimen/im_top_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:clickable="true"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/im_user"/>
+    </RelativeLayout>
+</RelativeLayout>

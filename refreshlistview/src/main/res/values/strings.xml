@@ -1,0 +1,8 @@
+<resources>
+    <string name="footer_hint_load_normal">加载更多</string>
+    <string name="footer_hint_load_ready">释放加载更多</string>
+    <string name="pullDown_Refreshing">加载中</string>
+    <string name="pullDown_LessThreshold">下拉刷新</string>
+    <string name="pullDown_OverThreshold">释放刷新</string>
+    <string name="pullDown_Initialize">下拉刷新</string>
+</resources>

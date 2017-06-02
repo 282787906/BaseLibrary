@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:swipe="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            swipe:contentViewId="@+id/content_view"
+
+
+            swipe:rightViewId="@+id/right_view">
+
+            <RelativeLayout
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:clickable="true"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv1"
+                    android:lines="2"
+                    android:text="haha"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/right_view"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="right"/>
+        </com.yanzhenjie.recyclerview.swipe.SwipeMenuLayout>
+
+        <include layout="@layout/horizontal_divider"></include>
+    </LinearLayout>
+</RelativeLayout>

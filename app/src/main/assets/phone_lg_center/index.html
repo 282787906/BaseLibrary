@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" >
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<title></title>
+	<link rel="stylesheet" href="plugins/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/user-login/main.css">
+	<link rel="stylesheet" type="text/css" href="plugins/menu/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="plugins/menu/css/styles.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div class="htmleaf-container">
+		<div class="screen">
+				<nav class="nav nav-none">
+					<ul>
+						<li class="nav-title"><a href="#">工作台</a></li>
+						<li><a href="#">临港特色服务</a></li>
+						<li><a href="#">财税服务</a></li>
+						<li><a href="#">消息管理</a></li>
+					</ul>
+				</nav>
+				<div class="second-nav">
+					<h4 class="text-center">临港特色服务</h4>
+					<ul>
+						<li><a href="#">高端制造也发展</a></li>
+						<li><a href="#">财政扶持</a></li>
+					</ul>
+					<button class="btn btn-default go-back-menu"  style="position: fixed; left: 40%; bottom: 100px;">
+						返回主菜单
+					</button>
+				</div>
+				<div class="nav-toggle">
+					<div class="icon"></div>
+				</div>
+			</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div id="navbar" class="navbar navbar-default">
+					<div class="navbar-container" id="navbar-container">
+						<div class="navbar-header pull-left">
+							<a href="http://shlgservice.com/lg/index.html" class="navbar-brand">
+								<img alt="" src="img/logo.png" width="160px">
+							</a>
+						</div>
+
+						<div class="pull-right user">
+							欢迎，test
+						</div>
+						<div class="mobile">
+							<div class="mobile-inner">
+								<div class="mobile-inner-header">
+									<div class="mobile-inner-header-icon mobile-inner-header-icon-out"></div>
+								</div>
+								<div class="mobile-inner-nav">
+									<a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;修改密码</a>
+									<a href="#" class="last-a"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp;&nbsp;退出登录</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="alert alert-info " role="alert">
+					<a href="/admin/feature/financial/serviceFinancialList" class="alert-link">请尽快办理2016年第2季度财政扶持申请工作，以免错过申请期。</a>
+				</div>
+
+
+				<div class="panel panel-default notification">
+					<!-- Default panel contents -->
+					<div class="panel-heading"><i class="glyphicon glyphicon-bullhorn"></i>&nbsp;&nbsp;<b>我的消息</b>
+					</div>
+
+					<!-- Table -->
+					<table id="messageTable" class="table table-bordered table-striped">
+						<thead>
+						<tr>
+
+							<th class="col-sm-4">内容</th>
+
+							<th class="col-sm-3">时间</th>
+							<th class="col-sm-2">状态</th>
+							<th class="col-sm-2 text-center">操作</th>
+						</tr>
+						</thead>
+						<tbody>
+
+						<tr>
+							<td>您在2016-09-05 16:29:52时申请的【财政返还相关服务】申请驳回</td>
+
+							<td>2016-09-05 17:05:46</td>
+							<td>
+
+								未读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="#" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>您在2016-07-29 09:35:06时申请的【财政返还相关服务】申请通过</td>
+
+							<td>2016-09-05 17:03:16</td>
+							<td>
+
+								已读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showMessageDetail(24);" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>您在2016-08-12 11:11:58时申请的【财政返还相关服务】申请驳回</td>
+
+							<td>2016-09-05 17:03:06</td>
+							<td>
+
+								未读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showMessageDetail(23);" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>您在2016-07-28 15:17:55时申请的【财政返还相关服务】申请驳回</td>
+
+							<td>2016-09-05 14:47:33</td>
+							<td>
+
+								已读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showMessageDetail(22);" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>您在2016-07-28 15:50:09时申请的【财政返还相关服务】申请通过</td>
+
+							<td>2016-09-05 14:47:21</td>
+							<td>
+
+								未读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showMessageDetail(21);" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>您在2016-08-10 13:50:43时申请的【财政返还相关服务】申请驳回</td>
+
+							<td>2016-08-10 13:51:00</td>
+							<td>
+
+								已读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showMessageDetail(20);" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>您在2016-08-10 13:48:09时申请的【财政返还相关服务】申请通过</td>
+
+							<td>2016-08-10 13:49:59</td>
+							<td>
+
+								已读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showMessageDetail(19);" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>您在2016-07-29 09:35:39时申请的【财政返还相关服务】申请通过</td>
+
+							<td>2016-08-01 08:48:19</td>
+							<td>
+
+								已读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showMessageDetail(18);" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>您在2016-07-29 13:35:35时申请的【发票申购】申请已完成</td>
+
+							<td>2016-07-29 13:38:20</td>
+							<td>
+
+								已读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showMessageDetail(16);" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>您在2016-07-29 13:31:45时申请的【扶持高端制造业发展相关服务】申请通过</td>
+
+							<td>2016-07-29 13:32:46</td>
+							<td>
+
+								已读
+
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showMessageDetail(15);" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="panel panel-default notification">
+					<!-- Default panel contents -->
+					<div class="panel-heading"><i class="glyphicon glyphicon-bullhorn"></i>&nbsp;&nbsp;<b>通知公告</b>
+					</div>
+					<!-- Table -->
+					<table id="noticeTable" class="table">
+						<tbody>
+						<tr>
+							<td><a target="_blank" href="http://shlgservice.com/lg/notice/notice_226.html">1. 临港地区2016年上半年工作报告解读</a></td>
+						</tr>
+						<tr>
+							<td><a target="_blank" href="http://shlgservice.com/lg/notice/notice_225.html">2. 临港“双特”政策2.0版出炉</a></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="panel panel-default notification">
+					<!-- Default panel contents -->
+					<div class="panel-heading"><i class="glyphicon glyphicon-bullhorn"></i>&nbsp;&nbsp;<b>办理记录</b>
+					</div>
+
+					<!-- Table -->
+					<table id="serviceTable" class="table table-bordered table-striped">
+						<thead>
+						<tr>
+							<th class="col-sm-4">服务</th>
+							<th class="col-sm-3">时间</th>
+							<th class="col-sm-2">状态</th>
+							<th class="col-sm-2 text-center">操作</th>
+						</tr>
+						</thead>
+						<tbody>
+
+						<tr>
+							<td>财政返还相关服务</td>
+							<td>2016-09-05 16:29:52</td>
+							<td>
+								<span class="sgz">驳回</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(18,'financial');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>财政返还相关服务</td>
+							<td>2016-08-12 11:11:58</td>
+							<td>
+								<span class="sgz">驳回</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(17,'financial');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>财政返还相关服务</td>
+							<td>2016-08-10 13:50:43</td>
+							<td>
+								<span class="sgz">驳回</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(16,'financial');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>财政返还相关服务</td>
+							<td>2016-08-10 13:48:09</td>
+							<td>
+								<span class="sgz">通过</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(15,'financial');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>发票申购</td>
+							<td>2016-07-29 13:35:35</td>
+							<td>
+								<span class="sgz">已完成</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(4,'invoice');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>扶持高端制造业发展相关服务</td>
+							<td>2016-07-29 13:31:45</td>
+							<td>
+								<span class="sgz">通过</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(4,'manufacturing');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>财政返还相关服务</td>
+							<td>2016-07-29 13:28:54</td>
+							<td>
+								<span class="sgz">通过</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(14,'financial');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>财政返还相关服务</td>
+							<td>2016-07-29 12:51:47</td>
+							<td>
+								<span class="sgz">通过</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(13,'financial');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>财政返还相关服务</td>
+							<td>2016-07-29 09:36:15</td>
+							<td>
+								<span class="sgz">驳回</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(11,'financial');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr><tr>
+							<td>财政返还相关服务</td>
+							<td>2016-07-29 09:35:56</td>
+							<td>
+								<span class="sgz">驳回</span>
+							</td>
+							<td class="text-center no-padding">
+								<a href="javascript:home.showDetail(10,'financial');" class="detail" data-id="1"> <i class="glyphicon glyphicon-eye-open"></i></a>
+							</td>
+						</tr></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="footer" class="row">
+			<div class="foot text-center">
+				临港地区企业服务局 ©2015-2017 沪备16005330号-1号
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="viewXqModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title">详细</h4>
+				</div>
+				<div class="modal-body sgInfo">
+
+					<table class="table table-bordered ">
+						<thead>
+						<tr>
+							<th class="col-sm-12" colspan="2">申请明细</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>
+								联系人姓名：
+								<span>张三</span>
+							</td>
+
+						</tr>
+						<tr>
+							<td>
+								联系人电话：
+								<span>15104458969</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								财政扶持政策类型：
+								<span>财政扶持</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								申请的扶持金额：
+								<span>500,000.00</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								申请时间：
+								<span>2016-09-05 16:29:52</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								完成时间：
+                            <span>
+								2016-09-05 17:05:46
+                            </span>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-sm-12" colspan="2">
+								状态：
+								<span>驳回</span>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+
+
+					<table class="table table-bordered ">
+						<thead>
+						<tr>
+							<th class="col-sm-12" colspan="2">公司信息</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td >
+								公司名称：
+								<span>上海伊文科技有限公司</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								税务登记证号码：
+								<span>91310112301318274X</span>
+							</td>
+						</tr>
+						<tr>
+							<td >
+								工商登记类型：
+								<span>有限责任公司</span>
+							</td>
+						</tr>
+						<tr>
+							<td >
+								公司注册地址：
+								<span>上海市闵行区虹梅南路1775号</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								公司经营地址：
+								<span>上海市闵行区虹梅南路1775号</span>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+
+
+					<table class="table table-bordered ">
+						<thead>
+						<tr>
+							<th class="col-sm-12">通讯信息</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="col-sm-12">
+								通讯地址：
+								<span>上海市闵行区虹梅南路1775号</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-sm-12">
+								法定代表人：
+								<span>李晓东</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-sm-12">
+								联系电话：
+								<span>18606608888</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-sm-12">
+								邮编：
+								<span>120000</span>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+
+
+					<table class="table table-bordered ">
+						<thead>
+						<tr>
+							<th class="col-sm-12">开户行</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="col-sm-12">
+								开户银行：
+								<span>中国银行上海闵行支行</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-sm-12">
+								银行账号：
+								<span>209188160213</span>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+
+
+					<table class="table table-bordered ">
+						<thead>
+						<tr>
+							<th class="col-sm-12" colspan="2">附件材料</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="col-sm-12">
+								<span>1. 工商营业执照和税务登记证复印件（加盖企业公章）；</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-sm-12">
+								<span>2. 开户银行和账号的复印件（加盖企业公章）；</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="col-sm-12">
+								<span>2. 法人代表和联系人身份证复印件（加盖企业公章）。</span>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="menu-bg fade"></div>
+
+	<script src="plugins/menu/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="plugins/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+
+	<script>
+		$(function () {
+
+			$('.detail').on('click', function () {
+				$('#viewXqModal').modal('show');
+			});
+		});
+	</script>
+</body>
+</html>

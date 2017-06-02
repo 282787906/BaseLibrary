@@ -1,0 +1,57 @@
+/* header */
+#navbar {
+    background-color: #006ecf;
+    border: none !important;
+    border-radius: 0;
+    min-height: 50px;
+    margin-bottom: 0;
+}
+#navbar .user {
+    margin-top: 15px;
+    margin-right: 15px;
+    color: white;
+}
+/* foot */
+.foot {
+    background-color: #191919;
+    color: #8e8e8e;
+    height: 56px;
+    line-height: 56px;
+}
+td { vertical-align: middle !important; }
+.alert-info { margin-top: 10px; }
+.no-padding-right { padding-right: 0; }
+.address {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    border-radius: 4px;
+    width: 100%;
+}
+.form-content { margin-top: 20px; }
+.cl-name {
+    border-top: 2px dotted #ccc;
+    border-bottom: 2px dotted #ccc;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+.no-padding { padding: 0 !important; }
+.dashed { border: 1px dotted #ccc; }
+.detail { display: block; padding: 20px 10px; }
+.form-content .col-xs-12, .form-content  .col-xs-8,  .form-content  .col-xs-9 { float: none !important; }
+.sglist .title {
+    font-size: 18px;
+    border-bottom: 4px solid #2f88ec;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    padding-bottom: 0px;
+}
+.sglist th {
+    background-color: #e1f2fc;
+}
+.sgInfo { height: 420px; overflow-y: scroll; }
+.sgInfo th {
+    background-color: #e1f2fc;
+    color: #006ecf;
+}

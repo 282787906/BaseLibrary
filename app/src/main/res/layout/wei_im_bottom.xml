@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F6F4F2"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <!--android:layout_alignParentBottom="true"-->
+        <ImageView
+            android:id="@+id/im_edit_iv_change_media"
+            style="@style/im_edit_img"
+            android:src="@mipmap/im_edit_change_media"/>
+
+        <EditText
+            android:id="@+id/im_edit_et_Str"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/im_edit_iv_emoji"
+            android:layout_toRightOf="@+id/im_edit_iv_change_media"
+            android:background="#fff"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/im_edit_iv_emoji"
+            style="@style/im_edit_img"
+            android:layout_toLeftOf="@+id/im_edit_rl_send"
+            android:clickable="true"
+            android:src="@mipmap/im_edit_emoji"/>
+
+        <RelativeLayout
+            android:id="@+id/im_edit_rl_send"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+
+                android:id="@+id/im_edit_iv_add"
+                style="@style/im_edit_img"
+                android:clickable="true"
+                android:src="@mipmap/im_edit_add"/>
+
+            <Button
+                android:id="@+id/im_edit_but_send"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/im_edit_send"
+                android:text="@string/im_send"
+                android:textColor="#fff"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+
+                android:layout_height="90dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="qwe"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="90dp"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="90dp"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="90dp"></RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                tools:activity="com.lee.base.fragment.NoHttp">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/nohttp_but_GetLon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GetLon"/>
+        <EditText
+            android:id="@+id/nohttp_et_url"
+            android:text="http://121.40.43.32:8080/lg_mb/index.html"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/nohttp_but_GetHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get_Head"/>
+        <Button
+            android:id="@+id/nohttp_but_Download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download"/>
+
+        <Button
+            android:id="@+id/nohttp_but_KuaYu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KuaYu"/>
+
+        <Button
+            android:id="@+id/nohttp_but_DownloadManager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DownloadManager"/> <Button
+        android:id="@+id/nohttp_but_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload"/>
+
+        <TextView
+            android:id="@+id/nohttp_tv_Msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"/>
+    </LinearLayout></ScrollView>
+</RelativeLayout>

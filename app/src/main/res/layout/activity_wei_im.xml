@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEAE8"
+    tools:context="com.lee.base.activity.WeiIMActivity">
+<include android:id="@+id/top" layout="@layout/wei_im_top"></include>
+    <com.lee.base.view.MyRecyclerView
+        android:id="@+id/im_mrv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/im_rl_edit"
+        android:layout_below="@+id/top"
+        ></com.lee.base.view.MyRecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/im_rl_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F6F5F4"
+        >
+
+       <include layout="@layout/wei_im_bottom"></include>
+    </RelativeLayout>
+</RelativeLayout>
