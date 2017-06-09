@@ -5,10 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:activity="com.lee.base.activity.ScanActivity">
-<me.dm7.barcodescanner.zbar.ZBarScannerView
-    android:layout_width="match_parent"
-    android:layout_height="300dp"
-    android:id="@+id/activity_scan_zbar_View">
-
-</me.dm7.barcodescanner.zbar.ZBarScannerView>
+<com.lee.base.qrcode.zbar.ScanView
+    android:id="@+id/activity_scan_zbar_View" android:layout_height="match_parent"
+    android:layout_width="match_parent"></com.lee.base.qrcode.zbar.ScanView>
 </RelativeLayout>

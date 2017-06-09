@@ -4,12 +4,13 @@
              android:layout_height="match_parent"
              android:background="#3fc"
              tools:activity="com.lee.base.fragment.Scan">
+ <com.lee.base.qrcode.zbar.ScanView
+     android:layout_height="match_parent"
+     android:layout_width="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <me.dm7.barcodescanner.zbar.ZBarScannerView
-        android:id="@+id/fragment_scan_zbar_View"
-        android:layout_width="match_parent"
-        android:layout_height="400dp">
-
-    </me.dm7.barcodescanner.zbar.ZBarScannerView>
+ </com.lee.base.qrcode.zbar.ScanView>
+ <TextView
+     android:text="asdasdasd"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
 </FrameLayout>

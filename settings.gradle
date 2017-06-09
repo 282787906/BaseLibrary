@@ -1,1 +1,1 @@
-include ':app', ':core', ':http', ':refreshlistview', ':refreshrecyclerview'
+include ':app', ':core', ':http', ':refreshlistview', ':refreshrecyclerview', ':qrcode'
