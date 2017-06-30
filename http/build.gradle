@@ -23,8 +23,8 @@ dependencies {
 //    testCompile 'junit:junit:4.12'
 //    compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.yolanda.nohttp:nohttp:1.1.1'
-//    compile project(':core')
-    compile 'com.lee.baseLibrary:core:2.0.5-SNAPSHOT'
+   compile project(':core')
+    //   compile 'com.lee.baseLibrary:core:2.0.5-SNAPSHOT'
 }
 
 apply plugin: 'maven'
